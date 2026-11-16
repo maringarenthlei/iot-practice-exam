@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A static practice examination for Fundamentals of Internet of Things.">
+    <title>Fundamentals of IoT - Practice Examination</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="IoT practice examination home"><span class="brand-mark">IoT</span><span>Practice Examination</span></a>
+      <span class="level-tag">NSQF Level 4</span>
+    </header>
+
+    <main id="top">
+      <section id="start-screen" class="screen start-screen">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">Fundamentals of Internet of Things</p>
+            <h1>Build confidence before your IoT assessment.</h1>
+            <p class="lead">A self-paced, browser-only practice examination covering IoT architecture, hardware platforms, networking, MQTT and cloud integration.</p>
+            <div class="facts" aria-label="Exam summary">
+              <div><strong>100</strong><span>Questions</span></div>
+              <div><strong>90</strong><span>Minutes</span></div>
+              <div><strong>50%</strong><span>Practice target</span></div>
+            </div>
+          </div>
+          <aside class="start-card">
+            <h2>Start your practice</h2>
+            <label for="student-name">Your name</label>
+            <input id="student-name" autocomplete="name" maxlength="80" placeholder="Enter your name">
+            <div class="course-lock"><span>Course</span><strong>Fundamentals of Internet of Things</strong></div>
+            <label for="practice-mode">Practice mode</label>
+            <select id="practice-mode"><option value="mock">Full mock exam · 100 questions · 90 minutes</option><option value="topic">Topic practice · up to 20 questions · 25 minutes</option></select>
+            <label for="topic-select">Focus topic</label>
+            <select id="topic-select"><option value="all">All curriculum topics</option><option value="hardware">Sensors, hardware &amp; programming</option><option value="networking">Networking &amp; wireless</option><option value="cloud">MQTT, cloud &amp; data</option><option value="security">Security, design &amp; projects</option><option value="architecture">IoT foundations &amp; applications</option></select>
+            <button id="start-btn" class="primary-btn">Begin practice exam <span aria-hidden="true">→</span></button>
+            <p class="privacy-note">Your answers stay in this browser. No information is sent anywhere.</p>
+          </aside>
+        </div>
+        <section class="information-grid">
+          <article><h2>What you will practise</h2><p>A 200-question learning bank across IoT components, Arduino and Raspberry Pi, ESP32/NodeMCU, protocols, connectivity, security and cloud data management.</p></article>
+          <article><h2>How it works</h2><p>Every attempt draws a different random set of 100 questions. Use the navigator, then review correct answers after submitting.</p></article>
+          <article><h2>Important</h2><p>This is independent practice material. It is not an official NIELIT examination or a substitute for NIELIT assessment rules.</p></article>
+        </section>
+        <section class="learning-hub" aria-labelledby="learning-hub-title">
+          <div class="section-intro"><p class="eyebrow">Learning hub</p><h2 id="learning-hub-title">Practise, build and revise.</h2><p>All learning records below stay only in this browser.</p></div>
+          <div class="hub-grid">
+            <article class="hub-card progress-card"><h3>Your topic progress</h3><p class="small-copy">Scores are updated when you finish an attempt.</p><div id="topic-progress" class="topic-progress"></div></article>
+            <article class="hub-card"><h3>Practical lab checklist</h3><div id="lab-checklist" class="checklist">
+              <label><input type="checkbox" data-lab="arduino-led"> Build an Arduino LED or button circuit</label>
+              <label><input type="checkbox" data-lab="sensor-read"> Read a DHT11, LDR or ultrasonic sensor</label>
+              <label><input type="checkbox" data-lab="raspberry-gpio"> Use Raspberry Pi GPIO with Python</label>
+              <label><input type="checkbox" data-lab="esp-wifi"> Connect ESP32 or NodeMCU to Wi-Fi</label>
+              <label><input type="checkbox" data-lab="mqtt"> Publish and subscribe using MQTT</label>
+              <label><input type="checkbox" data-lab="dashboard"> Send data to a cloud dashboard</label>
+            </div></article>
+          </div>
+          <div class="revision-grid">
+            <details open><summary>IoT essentials</summary><p><strong>Sense → process → connect → analyse → act.</strong> An IoT solution links sensors and actuators through a device, network and application or cloud layer.</p></details>
+            <details><summary>Hardware quick sheet</summary><p>Arduino is a microcontroller board for direct hardware control. Raspberry Pi is a single-board computer that can run an operating system. ESP32 and NodeMCU are popular connected IoT boards.</p></details>
+            <details><summary>Networking quick sheet</summary><p>Choose technology by range, power and data needs. Wi-Fi suits local higher-data connectivity; BLE is short range and low power; LoRaWAN and NB-IoT support low-power wide-area use cases.</p></details>
+            <details><summary>MQTT, cloud and data</summary><p>MQTT uses a broker and a publish-subscribe model. Cloud platforms can collect, store, visualise and manage device data. Use timestamps, thresholds and alerts meaningfully.</p></details>
+            <details><summary>Security quick sheet</summary><p>Use unique credentials, change defaults, patch firmware, encrypt data in transit and grant only necessary access. Design privacy into data collection.</p></details>
+          </div>
+          <div class="project-section"><div class="section-intro"><p class="eyebrow">Build it</p><h2>Mini-project ideas</h2></div><div class="project-grid">
+            <article><h3>Smart irrigation</h3><p>Use soil-moisture data to control a pump or relay. Add a manual override and record water events.</p></article>
+            <article><h3>Water-tank monitor</h3><p>Measure level with an ultrasonic sensor, show a percentage and trigger an alert at high or low thresholds.</p></article>
+            <article><h3>Air-quality monitor</h3><p>Read a gas sensor, display a trend and send threshold alerts to an IoT dashboard.</p></article>
+            <article><h3>Smart room monitor</h3><p>Combine temperature, light and motion data to create a simple monitoring dashboard.</p></article>
+          </div></div>
+          <div class="exam-strategy"><h3>Exam strategy</h3><ol><li>For a full mock, aim for about 50 seconds per question, leaving time for review.</li><li>Answer familiar questions first and use the navigator to revisit uncertain ones.</li><li>After each attempt, review incorrect answers by topic before starting again.</li><li>Use the lab checklist alongside theory revision; practical skills are part of the course.</li></ol></div>
+          <div class="feedback-card"><div><h3>Help improve the learning bank</h3><p><span id="flagged-count">0</span> question(s) flagged in this browser. Flag a question during answer review if it is unclear or needs correction.</p></div><button id="clear-flags-btn" class="secondary-btn">Clear local flags</button></div>
+        </section>
+      </section>
+
+      <section id="exam-screen" class="screen hidden" aria-live="polite">
+        <header class="exam-header">
+          <div><p class="eyebrow">Fundamentals of Internet of Things</p><h1>Practice Examination</h1><p id="candidate-name" class="candidate-name"></p></div>
+          <div class="timer"><span>Time remaining</span><strong id="timer">01:30:00</strong></div>
+        </header>
+        <div class="exam-layout">
+          <section class="question-card" aria-labelledby="question-number">
+            <div class="question-meta"><span id="question-number">Question 1 of 100</span><span id="question-topic" class="topic-tag"></span><span id="answer-status">Not answered</span></div>
+            <h2 id="question-text"></h2>
+            <fieldset id="options" class="options"><legend class="sr-only">Answer options</legend></fieldset>
+            <div class="question-actions"><button id="clear-btn" class="secondary-btn">Clear answer</button><button id="next-btn" class="primary-btn">Save &amp; next <span aria-hidden="true">→</span></button></div>
+          </section>
+          <aside class="navigator" aria-label="Question navigator">
+            <div class="progress-label"><span>Progress</span><strong id="answered-count">0 / 100 answered</strong></div>
+            <div id="question-grid" class="question-grid"></div>
+            <div class="legend"><span><i class="current-dot"></i>Current</span><span><i class="answered-dot"></i>Answered</span></div>
+            <button id="finish-btn" class="finish-btn">Finish practice exam</button>
+          </aside>
+        </div>
+      </section>
+
+      <section id="result-screen" class="screen hidden">
+        <div class="result-card">
+          <p class="eyebrow">Practice complete</p>
+          <h1 id="result-title">Well done.</h1>
+          <p id="result-message" class="lead"></p>
+          <div class="score-ring"><span id="score-value">0%</span><small>score</small></div>
+          <div class="result-grid">
+            <div><span>Correct</span><strong id="correct-count">0</strong></div>
+            <div><span>Incorrect</span><strong id="wrong-count">0</strong></div>
+            <div><span>Unanswered</span><strong id="unanswered-count">0</strong></div>
+          </div>
+          <div class="result-actions"><button id="review-btn" class="secondary-btn">Review answers</button><button id="restart-btn" class="primary-btn">Start again</button></div>
+        </div>
+      </section>
+
+      <section id="review-screen" class="screen hidden">
+        <div class="review-header"><div><p class="eyebrow">Answer review</p><h1>Learn from every question.</h1></div><button id="back-btn" class="secondary-btn">Back to result</button></div>
+        <div id="review-list" class="review-list"></div>
+      </section>
+    </main>
+    <footer>Static practice resource for Fundamentals of Internet of Things · NSQF Level 4</footer>
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
